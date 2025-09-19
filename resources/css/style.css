@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: #ffffff;
+    color: #555;
+    font-family: Lato,sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/hero-img.jpg);
+    background-attachment: fixed;
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+h1{
+    margin-top : 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 240%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    word-spacing: 3px;
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);   
+}
+.btn:link, .btn:visited{
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 200px;
+    font-size: 90%;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: all .2s; 
+}
+.btn-full :link, .btn-full:visited{
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    margin-right: 15px;
+}
+.btn-ghost:link, .btn-ghost:visited{
+    border: 2px solid #fff;
+    color: #fff;
+    background-color: transparent;
+}
+.btn:hover, .btn:active{
+    background-color: #e67e22;
+}
+.btn-ghost:hover, .btn-ghost:active{
+    background-color: #fff;
+    color: #777;
+}
+.btn-full:hover, .btn-full:active{
+    box-shadow: 0 10px 20px rgba(226,126,34,0.4);
+    transform: translateY(-3px);
+}
+.btn-ghost:hover, .btn-ghost:active{
+    box-shadow: 0 10px 20px rgba(255,255,255,0.4);
+    transform: translateY(-3px);
+}
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 30px;
+    border-radius: 100%;
+    position: absolute;
+    top: 20px;
+}
+.main-nav{
+    float: right;
+    margin-top: 55px;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    list-style: none;
+    font-size: 90%;
+    text-transform: uppercase;
+}
+.main-nav li a:link, .main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 3px;
+    transition: all .2s;
+}
+.main-nav li a:hover, .main-nav li a:active{
+    border-bottom: 2px solid #e67e22;    
+}
+.section-features{
+    background-color: #f8f8f8;
+    padding: 80px 0;    
+}
+.section-features .col{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 0 10px;
+}
+h2{
+    text-align: center;
+    font-size: 180%;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;   
+}
+h2:after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 100px;
+    background-color: #e67e22;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.box{
+    padding: 1%;
+}
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+.icon-big{
+    font-size: 300%;
+    display: block;
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+.section-meals{
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center; 
+}
+.meals-showcase{
+    list-style: none;
+    margin-top: 40px;   
+}
+.meals-showcase li{
+    width: 25%;
+    float: left;
+}
+.meal-photo{
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    
+}
+.meal-photo img{
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+    transition: all .2s;
+}
+.meal-photo img:hover{
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.clearfix::after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.section-meals{
+    padding: 0;
+    background-color: #fff;
+}
+.section-features .long-copy{
+    margin-bottom: 30px;   
+}
+.works-step{
+    margin-bottom: 50px;
+    margin-right: 25px;
+}
+.step-box{
+    text-align: center;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+.app-screen{
+    width: 100px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    text-align: center;
+}
+.app-screen:hover{
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.works-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%; 
+}
+.step-box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin: 10px;
+}
+.btn-app img:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+}
+.section-cities{
+    padding: 80px 0;
+    background-color: #777;
+    
+}
+.box img{
+    width: 50%;
+    justify-content: center;
+    margin: 10px 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    transition: all .2s;
+}
+.box img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.section-testimonials{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(img/Food.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+blockquote{
+    border-left: 10px solid #e67e22;
+    padding: 2%;
+    font-size: 120%;
+    line-height: 145%;
+    font-style: italic;
+    margin-top: 40px;
+    position: relative;
+}
+cite{
+    display: block;
+    font-style: normal;
+    font-size: 90%;
+    margin-top: 10px;
+    color: #e67e22;
+}
+cite img{
+    height: 40px;
+    width: auto;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+blockquote::before{
+    content: "\201C";
+    font-size: 400%;
+    line-height: 10px;
+    vertical-align: top;
+    margin-right: 10px;
+    color: #e67e22;
+}
+.section-plans{
+    background-color: #e8e8e8;
+    text-align: center;
+}
+.plan-box{
+    width: 30%;
+    float: left;
+    margin: 0 1.66%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    transition: all .2s;
+}
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.plan-price{
+    font-size: 200%;
+    color: #e67e22;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.plan-price span{
+    font-size: 60%;
+    color: #e67e22;
+}
+.plan-box ul{
+    list-style: none;
+    margin: 20px 0;
+}
+.plan-box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+.contact-form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.contact-form .row{
+    margin-bottom: 20px;
+}
+.contact-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact-form input[type="submit"]{
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.contact-form input[type="submit"]:hover{
+    background-color: #d96b1f;
+}
+footer{
+    background-color: #333;
+    text-align: center;
+    padding: 50px;
+    font-size: 90%;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+    margin-top: 10px;  
+}
+.social-links{
+    list-style: none;
+    float: right;
+    margin-top: 10px;
+}
+.footer-nav li, .social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li a:link, .footer-nav li a:visited,
+.social-links li a:link, .social-links li a:visited{
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s;
+}
+.footer-nav li a:hover, .footer-nav li a:active,
+.social-links li a:hover, .social-links li a:active{
+    color: #e67e22;
+    text-align: center;
+    font-size: 90%;
+    padding: 10px;
+    background-color: #333;
+    transition: all .2s;
+}
